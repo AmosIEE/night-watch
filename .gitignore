@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+
+# Editor files
+.idea
+.vscode
+
+
+# Node
+/node_modules
+
+# Dev
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+/dist
