@@ -1,0 +1,32 @@
+{
+  "name": "nights-watch",
+  "version": "1.0.0",
+  "description": "Monitor SDK",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "env=dev webpack -w",
+    "build": "env=prod webpack",
+    "lint": "tslint --project .",
+    "lint:fix": "tslint --fix --project .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://gitlab@git.garena.com:2222/yuepeng.li/nights-watch.git"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-loader": "^8.0.5",
+    "tslint": "^5.15.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.0"
+  },
+  "author": "Yuepeng.li",
+  "license": "ISC"
+}
