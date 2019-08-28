@@ -1,9 +1,12 @@
+image: node:12.3.1
+
+before_script:
+  - npm i
+
 stages:
   - unittest
 
 UnitTest:
   stage: unittest
   script:
-    - cd /
-    - npm install
     - npm run test
