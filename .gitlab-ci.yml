@@ -10,3 +10,5 @@ UnitTest:
   stage: unittest
   script:
     - npm run test
+  only:
+    - master
