@@ -28,6 +28,7 @@ class NightsWatch {
     }
 
     public unwatch(watcherId: string) {
+        console.log(('un watch'));
         const instance = this.collector.unwatch(watcherId);
         if (instance) {
             const pluginType = instance.PLUGIN_TYPE;
