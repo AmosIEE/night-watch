@@ -4,7 +4,7 @@ interface UploaderParams {
 }
 
 class Uploader {
-    private readonly projectName: string;
+       private readonly projectName: string
     private endPoint: string;
 
     constructor(params: UploaderParams) {

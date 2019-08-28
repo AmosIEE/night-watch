@@ -4,7 +4,13 @@ before_script:
   - npm i
 
 stages:
+  - eslint
   - unittest
+
+CodeLint:
+  stage: eslint
+  script:
+  - npm run lint
 
 UnitTest:
   stage: unittest
