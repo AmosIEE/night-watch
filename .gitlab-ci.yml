@@ -4,5 +4,6 @@ stages:
 UnitTest:
   stage: unittest
   script:
+    - cd /
     - npm install
     - npm run test
