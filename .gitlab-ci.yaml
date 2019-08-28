@@ -1,0 +1,8 @@
+stages:
+  - unittest
+
+UnitTest:
+  stage: unittest
+  script:
+    - yarn
+    - yarn test
