@@ -1,7 +1,11 @@
 image: node:12.3.1
 
 before_script:
-  - npm i
+- yarn
+
+cache:
+  paths:
+  - node_modules/
 
 stages:
   - eslint
@@ -10,11 +14,13 @@ stages:
 CodeLint:
   stage: eslint
   script:
-  - npm run lint
+    - yarn lint
+  except:
+    - /^test-.*$/
 
 UnitTest:
   stage: unittest
   script:
-    - npm run test
+    - yarn test
   only:
     - master
